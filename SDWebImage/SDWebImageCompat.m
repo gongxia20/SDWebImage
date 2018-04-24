@@ -12,11 +12,12 @@
 #error SDWebImage is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
 #endif
 
+// 内联函数
 inline UIImage *SDScaledImageForKey(NSString *key, UIImage *image) {
     if (!image) {
         return nil;
     }
-    
+    // image是图片数组就会进判断,注意不是gif
     if ([image.images count] > 0) {
         NSMutableArray *scaledImages = [NSMutableArray array];
 
