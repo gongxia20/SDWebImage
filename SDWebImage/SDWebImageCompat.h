@@ -57,6 +57,7 @@
 #define SDDispatchQueueRelease(q) (dispatch_release(q))
 #define SDDispatchQueueSetterSementics assign
 #endif
+
 // 提供改外部的图片函数
 extern UIImage *SDScaledImageForKey(NSString *key, UIImage *image);
 // 声明了返回值为void的block. block名字:SDWebImageNoParamsBlock(没参数的block)
