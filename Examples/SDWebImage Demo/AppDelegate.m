@@ -13,7 +13,7 @@
 #import <SDWebImage/SDImageCache.h>
 
 @implementation AppDelegate
-
+// 自动生成get,set方法
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 
